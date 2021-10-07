@@ -278,15 +278,6 @@
 								"sink": {
 									"path": "$['lvl']"
 								}
-							},
-							{
-								"source": {
-									"name": "Status",
-									"type": "String"
-								},
-								"sink": {
-									"path": "$['topStatus']"
-								}
 							}
 						]
 					}
