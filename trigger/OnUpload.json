@@ -1,0 +1,25 @@
+{
+	"name": "OnUpload",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "GenerateAllFileTypes",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/data/blobs/",
+			"blobPathEndsWith": "csv",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/fcdd7d09-54ab-4395-b8ed-f754c640fb8a/resourceGroups/DataFactory203/providers/Microsoft.Storage/storageAccounts/datafactory203storage",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

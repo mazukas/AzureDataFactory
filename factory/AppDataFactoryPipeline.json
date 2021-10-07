@@ -1,0 +1,9 @@
+{
+	"name": "AppDataFactoryPipeline",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "9fe1c9f2-469c-46a7-823c-7748f6ea7ac7",
+		"tenantId": "8bd80c3a-ea05-473d-aa15-19a2828bcee8"
+	}
+}
