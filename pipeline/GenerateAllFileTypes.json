@@ -240,7 +240,7 @@
 									"type": "Int32"
 								},
 								"sink": {
-									"path": "id"
+									"path": "$['id']"
 								}
 							},
 							{
@@ -249,7 +249,7 @@
 									"type": "String"
 								},
 								"sink": {
-									"path": "opt.name"
+									"path": "$['opt']['name']"
 								}
 							},
 							{
@@ -258,7 +258,7 @@
 									"type": "String"
 								},
 								"sink": {
-									"path": "opt.status"
+									"path": "$['opt']['status']"
 								}
 							},
 							{
@@ -267,7 +267,7 @@
 									"type": "DateTime"
 								},
 								"sink": {
-									"path": "opt.date"
+									"path": "$['opt']['date']"
 								}
 							},
 							{
@@ -276,7 +276,16 @@
 									"type": "String"
 								},
 								"sink": {
-									"path": "lvl"
+									"path": "$['lvl']"
+								}
+							},
+							{
+								"source": {
+									"name": "Status",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['topStatus']"
 								}
 							}
 						]
