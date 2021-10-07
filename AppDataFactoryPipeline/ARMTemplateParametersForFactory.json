@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "AppDataFactoryPipeline"
+		},
+		"AppDataStorageConn_accountKey": {
+			"value": ""
+		},
+		"CsvLinkedService_accountKey": {
+			"value": ""
+		},
+		"DestinationDataStoreConn_accountKey": {
+			"value": ""
+		},
+		"AppDataStorageConn_properties_typeProperties_url": {
+			"value": "https://datafactory203storage.dfs.core.windows.net"
+		},
+		"CsvLinkedService_properties_typeProperties_url": {
+			"value": "https://datafactory203storage.dfs.core.windows.net"
+		},
+		"DestinationDataStoreConn_properties_typeProperties_url": {
+			"value": "https://datafactory203storage.dfs.core.windows.net"
+		},
+		"OnUpload_properties_typeProperties_scope": {
+			"value": "/subscriptions/fcdd7d09-54ab-4395-b8ed-f754c640fb8a/resourceGroups/DataFactory203/providers/Microsoft.Storage/storageAccounts/datafactory203storage"
+		}
+	}
+}
